@@ -440,8 +440,11 @@ padding-top: 30px;
 #parallax-company{
   background-image: url(../img/parallax/company_hq.jpg);
 }
-#parallax-stanford{
+#parallax-bates{
   background-image: url(../img/parallax/bates_winter.jpg);
+}
+#parallax-bates-lightning{
+  background-image: url(../img/parallax/lightning-Bates-College.jpg);
 }
 #parallax-research{
   background-image: url(../img/parallax/drone.jpg);
