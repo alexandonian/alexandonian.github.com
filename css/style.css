@@ -435,7 +435,7 @@ padding-top: 30px;
 
 /* Applies to all parallax on all screens */
 .section-parallax-format {
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 #parallax-company{
   background-image: url(../img/parallax/company_hq.jpg);

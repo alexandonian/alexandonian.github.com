@@ -29,9 +29,6 @@
             masonry: {
                 columnWidth: $container.width() / $resize
             }
-
-
-            
         });
 
         $('#filter a').click(function(){

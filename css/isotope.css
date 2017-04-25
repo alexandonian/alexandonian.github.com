@@ -36,6 +36,7 @@
       -ms-transition-property:     -ms-transform, opacity;
        -o-transition-property:         top, left, opacity;
           transition-property:         transform, opacity;
+          height: 257px;
 }
 
 /**** disabling Isotope CSS3 transitions ****/

@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <!--[if lt IE 7]>      
 <html class="no-js lt-ie9 lt-ie8 lt-ie7">
-    <![endif]-->
+<![endif]-->
     <!--[if IE 7]>         
     <html class="no-js lt-ie9 lt-ie8">
-        <![endif]-->
+    <![endif]-->
         <!--[if IE 8]>         
         <html class="no-js lt-ie9">
-            <![endif]-->
-            <!--[if gt IE 8]><!--> 
-            <html class="no-js">
-                <!--<![endif]-->
-                <head>
-                    <title>Alex Andonian</title>
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <meta name="author" content="Alex Andonian">
-                    <meta charset="utf-8">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-                    <meta name="description" content="">
-                    <meta name="keywords" content="alex,andonian,bates college,neuroscience,physics,math,computer,science,artificial,intelligence,">
-                    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
-                    <link href='//https://www.fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-                    <link rel="stylesheet" type="text/css" href="./css/isotope.css" media="screen" />
-                    <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
-                    <link rel="stylesheet" href="./css/main.css">
-                    <link rel="stylesheet" href="./css/main-theme.css">
-                    <link rel="stylesheet" href="./css/responsive-slider.css">
-                    <link rel="stylesheet" href="./css/animate.css">
-                    <link rel="stylesheet" href="./css/style.css">
-                    <link rel="stylesheet" href="./css/font-awesome.min.css">
-                    <link rel="stylesheet" href="./css/skin.css">
-                    - <script src="//https://www.ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-                    <script type="text/javascript">
-                        var onReturnCallback = function(response) {
-                          $.post('secure.php',
-                          {
-                            gre: response,
-                            page: 'homepage',
-                          },
-                          function(data, status) {
-                            document.getElementById("recaptcha-protected").innerHTML = data;
+        <![endif]-->
+        <!--[if gt IE 8]><!--> 
+        <html class="no-js">
+        <!--<![endif]-->
+        <head>
+            <title>Alex Andonian</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="author" content="Alex Andonian">
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+            <meta name="description" content="">
+            <meta name="keywords" content="alex,andonian,bates college,neuroscience,physics,math,computer,science,artificial,intelligence,">
+            <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+            <link href='//https://www.fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+            <link rel="stylesheet" type="text/css" href="./css/isotope.css" media="screen" />
+            <link rel="stylesheet" href="./js/fancybox/jquery.fancybox.css" type="text/css" media="screen" />
+            <link rel="stylesheet" href="./css/main.css">
+            <link rel="stylesheet" href="./css/main-theme.css">
+            <link rel="stylesheet" href="./css/responsive-slider.css">
+            <link rel="stylesheet" href="./css/animate.css">
+            <link rel="stylesheet" href="./css/style.css">
+            <link rel="stylesheet" href="./css/font-awesome.min.css">
+            <link rel="stylesheet" href="./css/skin.css">
+            <link rel="stylesheet" href="./css/bootstrap-magnify.min.css">
+            <script src="//https://www.ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <script src='https://www.google.com/recaptcha/api.js'></script>
+            <script type="text/javascript">
+                var onReturnCallback = function(response) {
+                  $.post('secure.php',
+                  {
+                    gre: response,
+                    page: 'homepage',
+                },
+                function(data, status) {
+                    document.getElementById("recaptcha-protected").innerHTML = data;
                           });  // end of post
                         }; // end of onReturnCallback
                     </script>
@@ -50,44 +52,44 @@
                             <div class="navbar navbar-fixed-top" role="navigation" data-0="line-height:100px; height:100px; background-color:rgba(0,7,45,0.6);" data-300="line-height:60px; height:60px; background-color:rgba(0,7,45,.9);">
                                 <div class="navbar-header">
                                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="fa fa-bars color-white"></span>
+                                        <span class="fa fa-bars color-white"></span>
                                     </button>
                                     <h1><a class="navbar-brand" href="//www.alexandonian.com" data-0="line-height:95px;" data-300="line-height:55px;">Alex Andonian
-                                        </a>
-                                    </h1>
-                                </div>
-                                <div class="navbar-collapse collapse">
-                                    <ul class="nav navbar-nav" data-0="margin-top:26px;" data-300="margin-top:8px;">
-                                        <li><a href="#about">About</a></li>
-                                        <li><a href="#education">Education</a></li>
-                                        <li><a href="#outreach">Outreach</a></li>
-                                        <li><a href="#work">Industry</a></li>
-                                        <li><a href="#projects">Projects</a></li>
-                                        <li><a href="#research">Research</a></li>
-                                        <li><a href="#contact">Contact</a></li>
-                                    </ul>
-                                </div>
+                                    </a>
+                                </h1>
                             </div>
-                        </section>
-                    </div>
-                    <section class="featured">
-                        <div id="index">
-                            <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
-                                <div class="slides" data-group="slides">
-                                    <ul>
-                                        <li>
-                                            <div class="slide-body" data-group="slide" data-length="700">
-                                                <img src="./img/breast_cancer_gif.gif" alt="">
-                                                <div id="jumbotron-twitch" class="caption header" data-animate="slideAppearUpToDown" data-delay="300" data-length="300">
-                                                    <h2>Deep learning meets computational pathology</h2>
-                                                    <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="900" data-length="300">
-                                                        <h4><span>
-                                                            Improving breast cancer diagnosis using convolutional neural networks</span>
-                                                        </h4>
-                                                    </div>
+                            <div class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav" data-0="margin-top:26px;" data-300="margin-top:8px;">
+                                    <li><a href="#about">About</a></li>
+                                    <li><a href="#education">Education</a></li>
+                                    <li><a href="#outreach">Outreach</a></li>
+                                    <li><a href="#work">Industry</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#research">Research</a></li>
+                                    <li><a href="#contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <section class="featured">
+                    <div id="index">
+                        <div class="responsive-slider" data-spy="responsive-slider" data-autoplay="true">
+                            <div class="slides" data-group="slides">
+                                <ul>
+                                    <li>
+                                        <div class="slide-body" data-group="slide" data-length="700">
+                                            <img src="./img/breast_cancer_gif.gif" alt="">
+                                            <div id="jumbotron-twitch" class="caption header" data-animate="slideAppearUpToDown" data-delay="300" data-length="300">
+                                                <h2>Deep learning meets computational pathology</h2>
+                                                <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="900" data-length="300">
+                                                    <h4 style="font-weight: normal;"><span>
+                                                        Improving breast cancer diagnosis using convolutional neural networks</span>
+                                                    </h4>
+                                                </div>
                                                     <!--  <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="600" data-length="300">
                                                         <h3><a class="btn btn-default btn-lg" href="./projects/viewpoint_3d_pose/" role="button">Learn more »</a></h3></div>
-                                                        </div> -->
+                                                    </div> -->
                                                     <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="600" data-length="300">
                                                         <!-- <h3><a class="btn btn-default btn-lg" href="Lightning.html" role="button">Learn more »</a></h3> -->
                                                         <h3><a class="btn btn-default btn-lg" role="button">More Info Coming Soon!</a></h3>
@@ -97,15 +99,22 @@
                                         </li>
                                         <li>
                                             <div class="slide-body" data-group="slide" data-length="100">
-                                                <img src="./img/brain.gif" alt="">
+                                                <!-- <img src="./img/brain.gif" height="100%"> -->
+                                                <!-- <img data-toggle="magnify" src="./img/aba_embed_reduce.jpg" height="100%"> -->
+                                                <img src="./img/aba_embed_reduce.jpg" height="100%">
                                                 <div id="jumbotron-twitch" class="caption header" data-animate="slideAppearDownToUp" data-delay="500" data-length="300">
-                                                    <h2>Exploring the Allen Brain Atlas</h2>
+                                                    <h2 style="color: #069;">
+                                                        <!-- Exploring the Allen Brain Atlas -->
+                                                        Deep learning meets the Allen Brain Atlas
+                                                    </h2>
                                                     <div class="caption-sub" data-animate="slideAppearUpToDown" data-delay="800" data-length="400">
-                                                        <h4><span>Investigating the molecular organization of the mouse olfactory system</span></h4>
+                                                        <h4 style="color: #069; font-weight: normal;">
+                                                            <span>
+                                                                Developing data-driven approaches for investigating the molecular heterogeniety of the mouse olfactory system
+                                                            </span>
+                                                        </h4>
                                                     </div>
-                                                    <!-- <div class="caption-sub" data-animate="slideAppearRightToLeft" data-delay="1200" data-length="400"><a href="https://github.com/ahaque/twitch-troll-detection" target="_blank" class="btn btn-default btn-lg" role="button">Download the code and dataset »</a>
-                                                        </div> -->
-                                                    <div class="caption-sub" data-animate="slideAppearRightToLeft" data-delay="1200" data-length="400"><a target="_blank" class="btn btn-default btn-lg" role="button">More Info Coming Soon!</a>
+                                                    <div class="caption-sub" data-animate="slideAppearRightToLeft" data-delay="1200" data-length="400"><a target="_blank" class="btn btn-default btn-lg" role="button" style="color: #069;">More Info Coming Soon!</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -117,474 +126,514 @@
                                                     <h2></h2>
                                                     <div class="caption-sub" data-animate="slideAppearDownToUp" data-delay="1200" data-length="400">
                                                         <h4><span>
-                                                            </span>
-                                                        </h4>
-                                                    </div>
-                                                    <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">
-                                                        <h3><a class="btn btn-default btn-lg" role="button">More info coming soon</a></h3>
-                                                    </div>
+                                                        </span>
+                                                    </h4>
                                                 </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
-                                <a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="about" class="section clearfix appear">
-                        <div class="container">
-                            <div class="about">
-                                <div class="row mar-top5">
-                                    <div class="col-md-offset-3 col-md-6 wow bounceIn" data-animation-delay="5">
-                                        <div class="section-header">
-                                            <h2 class="section-heading animated">About</h2>
-                                            <p>Short introduction with some external links.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="row-slider">
-                                        <div class="col-md-6 mar-bot wow rotateInDownLeft" data-animation-delay="10s">
-                                            <br><img alt="" class="img-responsive img-thumbnail" src="./img/photos/3.jpg" width="100%" height="350"/>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 mar-top10 wow rotateInUpLeft" data-animation-delay="10s">
-                                        <div class="company mar-left10">
-                                            <p style="font-family: 'Roboto', serif;"><b>
-                                                I'm currently a student at <a href="http://www.bates.edu/">Bates College</a> studying neuroscience.
-                                                My advisors are <a href="http://www.jcastrolab.com/">Jason Castro</a> and <a href="http://www.bates.edu/physics-astronomy/faculty-staff/travis-gould/">Travis Gould</a>.</b>
-                                            </p>
-                                            <p>
-                                                I enjoy applying machine learning and data science principles to problems in biology and medicine while primarily advancing engineering knowledge. In the upcoming year, I will pursue a joint neuro-physics thesis investigating the molecular organization of the mouse olfactory system. In particular, I will analyze in-situ hybridization data provided by the Allen Brain Institute to quantify spatial patterning and clustering of gene expression across the OB's mitral cell layer, for a large fraction of the genome. 
-                                                <!-- develop a map of gene expression thoughout the olfactory bulb (for the entire genome). I would like to know   -->
-                                            </p>
-                                            <p>
-                                                I also hope to TA an undergraduate seminar in computational neuroscience in the upcoming academic year.
-                                                Some of my general interests are:
-                                            </p>
-                                        </div>
-                                        <div class="list-style">
-                                            <div class="row">
-                                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                                    <ul>
-                                                        <li>Machine Learning</li>
-                                                        <li>Computer Vision</li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-lg-6 col-sm-6 col-xs-12">
-                                                    <ul>
-                                                        <li>Neuroscience</li>
-                                                        <li>Artificial Intelligence</li>
-                                                    </ul>
+                                                <div class="caption-sub" data-animate="slideAppearLeftToRight" data-delay="800" data-length="300">
+                                                    <h3><a class="btn btn-default btn-lg" role="button">More info coming soon</a></h3>
                                                 </div>
                                             </div>
                                         </div>
-                                        <!-- list -->
-                                    </div>
-                                    <!-- right content -->
-                                </div>
-                                <!-- row -->
+                                    </li>
+                                </ul>
                             </div>
-                            <!-- about -->
+                            <a class="slider-control left" href="#" data-jump="prev"><i class="fa fa-angle-left fa-2x"></i></a>
+                            <a class="slider-control right" href="#" data-jump="next"><i class="fa fa-angle-right fa-2x"></i></a>
                         </div>
-                        <!-- container -->
-                    </section>
-                    <!-- about -->
-                    <section class="section section-parallax-format" data-speed="5" data-type="background" id="parallax-graph">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="align-center">
-                                        <div class="testimonial pad-top40 pad-bot40 clearfix">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="outreach" class="section pad-bot5 bg-white appear clearfix">
-                        <div class="container">
-                        	<div class="row mar-bot5">
-                        		<div class="col-md-offset-3 col-md-6">
-                        			<div class="section-header">
-                        				<h2 class="section-heading animated">Community Outreach</h2>
-                        				<p>Some of the organizations I have worked with in the past.</p>
-                        			</div>
-                        		</div>
-                        	</div>
-                           	<div class="row mar-bot-40">
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/outreach/Lewiston_Public_Schools.png" width="100%">
-                                   </div>
-                                 </div>
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/outreach/bbbs.jpg" width="100%">
-                                   </div>
-                                 </div>
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/outreach/CodeOrg.png" width="100%">
-                                   </div>
-                                 </div>
-                               </div>
-                               <div class="row mar-bot-40">
-                                   <div class="col-sm-12 mar-bot-40"><br><br><br></div>
-                               </div>
-                        </div>
-                    </section>
-                    <section class="section section-parallax-format" id="parallax-bates-lightning" data-speed="3.5" data-type="background">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="align-center">
-                                        <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="work" class="section pad-bot5 bg-white appear clearfix">
-                        <div class="container">
-                            <div class="row mar-bot5">
-                                <div class="col-md-offset-3 col-md-6">
+                    </div>
+                </section>
+                <section id="about" class="section clearfix appear">
+                    <div class="container">
+                        <div class="about">
+                            <div class="row mar-top5">
+                                <div class="col-md-offset-3 col-md-6 wow bounceIn" data-animation-delay="5">
                                     <div class="section-header">
-                                        <h2 class="section-heading animated">Industry Experience</h2>
-                                        <p>Places and teams I hope to work with in the future.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row mar-bot-40">
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/company/google.png" width="100%">
-                                     Research Scientist, <b>Google Brain Team</b>
-                                   </div>
-                                 </div>
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/company/facebook.png" width="100%">
-                                     Research Engineer, <b>Facebook AI Research (FAIR)</b>
-                                   </div>
-                                 </div>
-                                 <div class="col-sm-4">
-                                   <div class="align-center">
-                                     <img src="./img/company/nvidia.png" width="100%">
-                                     Deep Learning Software Engineer
-                                   </div>
-                                 </div>
-                               </div>
-                               <div class="row mar-bot-40">
-                                   <div class="col-sm-12 mar-bot-40"><br><br><br></div>
-                               </div>
-                        </div>
-                    </section>
-                    <section class="section section-parallax-format" id="parallax-company" data-speed="8" data-type="background">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="align-center">
-                                        <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="education" class="section appear clearfix">
-                        <div class="container">
-                            <div class="row mar-bot10">
-                                <div class="col-md-offset-3 col-md-6">
-                                    <div class="section-header">
-                                        <h2 class="section-heading">Education</h2>
-                                        <p>Subjects I've studied over the years.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row align-center mar-bot20">
-                                <div class="col-md-4">
-                                    <div class="team-member">
-                                        <div class="profile-picture">
-                                            <figure><img src="img/edu/pitt.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="team-detail">
-                                            <h2>Summer 2016</h2>
-                                            <h4>University of Pittsburgh</h4>
-                                        </div>
-                                        <div class="team-bio">
-                                            REU in Computational Biology<br>
-                                            Advisor: <a href="https://www.csb.pitt.edu/faculty/chakra/" target="_blank">Chakra Chennubhotla</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="team-member">
-                                        <div class="profile-picture">
-                                            <figure><img src="img/edu/bates.jpg" alt="" height="100%"></figure>
-                                        </div>
-                                        <div class="team-detail">
-                                            <h2>2013-2017</h2>
-                                            <h4>Bates College</h4>
-                                        </div>
-                                        <div class="team-bio">
-                                            BS, Neuroscience, Physics, Mathematics<br>
-                                            Advisors: <a href="http://www.jcastrolab.com/" target="_blank">Jason Castro</a>,
-                                            <a href="http://www.bates.edu/physics-astronomy/faculty-staff/travis-gould/" target="blank">Travis Gould </a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4">
-                                    <div class="team-member">
-                                        <div class="profile-picture">
-                                            <figure><img src="img/edu/rivers.jpg" alt=""></figure>
-                                        </div>
-                                        <div class="team-detail">
-                                            <h2>2013</h2>
-                                            <h4>Rivers High School</h4>
-                                        </div>
-                                        <div class="team-bio">
-                                            Graduated with Distinction
-                                            <br> Cum Laude Society <br>
-                                            High Honors 2009 - 2012 <br>
-                                            Scholar Athlete Awards 2009 - 2012 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section section-parallax-format" id="parallax-bates" data-speed="12" data-type="background">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="align-center">
-                                        <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="projects" class="section appear clearfix">
-                        <div class="container">
-                            <div class="row mar-bot40">
-                                <div class="col-md-offset-3 col-md-6">
-                                    <div class="section-header">
-                                        <h2 class="section-heading animated" data-animation="bounceInUp">Projects</h2>
-                                        <p>A collection of side projects, research studies, and course assignments.</p>
+                                        <h2 class="section-heading animated">About</h2>
+                                        <p>Short introduction with some external links.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <nav id="filter" class="col-md-12 text-center">
-                                    <ul>
-                                        <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
-                                        <li><a href="#" class="btn-theme btn-small" data-filter=".ml" ><i class="fa fa-sort"></i> Machine Learning</a></li>
-                                        <li><a href="#" class="btn-theme btn-small" data-filter=".vision"><i class="fa fa-sort"></i> Experimental Work</a></li>
-                                        <li><a href="#" class="btn-theme btn-small" data-filter=".db"><i class="fa fa-sort"></i> Projects</a></li>
-                                        <li><a href="#" class="btn-theme btn-small" data-filter=".other"><i class="fa fa-sort"></i> Other</a></li>
-                                    </ul>
-                                </nav>
-                                <div class="col-md-12">
-                                    <div class="row">
-                                        <div class="portfolio-items isotopeWrapper clearfix" id="3">
-                                            <article class="col-md-4 isotopeItem ml">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
-                                                        <img src="img/projects/coexp_fig.png" alt="welcome" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a target="_blank" >Coexpression profiles for addiction-related genes using monte-carlo simulations</a></h5>
-                                                            <a target="_blank" class="fancybox" href="projects/Andonian_Moody_Grant.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem db">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInDownRight">
-                                                        <img src="img/projects/violin.png" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a  target="_blank">Mathematical Modeling of Violin using Mathematica</a></h5>
-                                                            <a  target="_blank" class="fancybox"
-                                                            href="projects/Andonian_Violin.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem vision">
-                                                <div class="portfolio-item">
-                                                    <div class="wow bounceIn">
-                                                        <img src="img/projects/Metrics.png" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a href="./img/projects/2.jpg" class="fancybox">Characterization of dose-dependent 5-HT<sub>2C</sub> Receptor desensitization in <i> Xenopus Laevis</i> oocytes </a></h5>
-                                                            <a href="./img/projects/2.jpg" class="fancybox"
-                                                            href="projects/Andonian_BINS308_5-HT2C_Receptor_Final_Lab_Report.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem vision">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInDownRight">
-                                                        <img src="img/projects/friedel_crafts.png" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a href="./img/projects/friedel_crafts.png" class="fancybox">Electronic Factors Affecting the Rate and Regioisomeric outcome of the Friedel-Crafts Acylation Reaction</a></h5>
-                                                            <a class="fancybox" href="projects/Andonian_Friedel_Crafts_Acylation.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem other">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInUpLeft">
-                                                        <img src="img/projects/caesar_code.png" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a  target="_blank">SECRET CODES WITH CAESAR CIPHERS - teaching middleschoolers to code</a></h5>
-                                                            <a  target="_blank" class="fancybox"
-                                                            href="projects/aandonian_cbock_MATH355A_CEL_Project.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem db">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInDownRight">
-                                                        <img src="img/projects/digital_therm.jpg" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a  target="_blank">Building a digital LED thermometer</a></h5>
-                                                            <a target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem other">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInUpLeft">
-                                                        <img src="img/projects/mam_bodies.png" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a href="./dl/omega_presentation.pdf" target="_blank">Mammillary Body atrophy associated with chronic alcoholism</a></h5>
-                                                            <a target="_blank" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem vision">
-                                                <div class="portfolio-item">
-                                                    <div class="wow bounceIn">
-                                                        <img src="img/projects/apparatus.PNG" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5>Experimental determination of the mass of the neutron</a></h5>
-                                                            <a target="_blank" class="fancybox" href="projects/Andonian_HD_Lab_Report.pdf"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                            <article class="col-md-4 isotopeItem other">
-                                                <div class="portfolio-item">
-                                                    <div class="wow rotateInDownRight">
-                                                        <img src="img/projects/bates_connect.jpg" alt="" />
-                                                    </div>
-                                                    <div class="portfolio-desc align-center">
-                                                        <div class="folio-info">
-                                                            <h5><a href="http://ribs.csres.utexas.edu/nosqlrdf/" target="_blank">Bates Connect: an android app that fetches relevant info about the college and displays it in one convenient place</a></h5>
-                                                            <a  target="_blank" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </article>
-                                        </div>
+                                <div class="row-slider">
+                                    <div class="col-md-6 mar-bot wow rotateInDownLeft" data-animation-delay="10s">
+                                        <br><img alt="" class="img-responsive img-thumbnail" src="./img/photos/3.jpg" width="100%" height="350"/>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section class="section pad-top40 pad-bot40 mar-bot20 section-parallax-format" id="parallax-research" data-speed="15" data-type="background">
-                        <div class="container ">
-                            <div class="align-center pad-top40 pad-bot40">
-                                <h4 class="color-white pad-top50"></h4>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="research" class="section appear clearfix">
-                        <div class="container pad-top10">
-                        <div class="row mar-bot10 ">
-                            <div class="col-md-offset-3 col-md-6">
-                                <div class="section-header">
-                                    <div class="wow bounceIn">
-                                        <h2 class="section-heading animated" data-animation="bounceInUp">Research</h2>
-                                        <p>An overview of my research interests, publications, etc.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="line-pricing-table wow rotateInDownRight" data-animation-delay="10s">
-                                <div class="pricing-table-wrap">
-                                    <ul>
-                                        <center>
-                                            <h3>Interests</h3>
-                                        </center>
-                                        <p align="center">
-                                            Bioimage informatics, image registration, computational anatomy
+                                <div class="col-md-6 mar-top10 wow rotateInUpLeft" data-animation-delay="10s">
+                                    <div class="company mar-left10">
+                                        <p style="font-family: 'Roboto', serif;"><b>
+                                            I'm currently a student at <a href="http://www.bates.edu/">Bates College</a> studying neuroscience.
+                                            My advisors are <a href="http://www.jcastrolab.com/">Jason Castro</a> and <a href="http://www.bates.edu/physics-astronomy/faculty-staff/travis-gould/">Travis Gould</a>.</b>
                                         </p>
-                                        <br>
-                                        <center>
-                                            <h3>Application Areas</h3>
-                                        </center>
-                                        <p align="center">
-                                            Medical diagnosis, study of disease processes
+                                        <p>
+                                            I enjoy applying machine learning to problems in biology and medicine while primarily advancing engineering knowledge. This academic year, I have successfully pursued a joint neuro-physics thesis investigating the molecular organization of the mouse olfactory system. In particular, I have analyzed in-situ hybridization data provided by the Allen Brain Institute to quantify spatial patterning and clustering of gene expression across the OB's mitral cell layer, for a large fraction of the genome. My long-term research goals are focused on promoting a self-propagating convergence of neural science and machine learning.
+                                            <!-- develop a map of gene expression thoughout the olfactory bulb (for the entire genome). I would like to know   -->
                                         </p>
-                                    </ul>
+                                        <p>
+                                            Some of my general interests are:
+                                        </p>
+                                    </div>
+                                    <div class="list-style">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                                <ul>
+                                                    <li>Deep Learning</li>
+                                                    <li>Computer Vision</li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-lg-6 col-sm-6 col-xs-12">
+                                                <ul>
+                                                    <li>Neuroscience</li>
+                                                    <li>Artificial Intelligence</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- list -->
                                 </div>
+                                <!-- right content -->
                             </div>
-                            <div class="line-pricing-table wow rotateInUpRight" data-animation-delay="10s">
-                                <div class="pricing-table-wrap">
-                                    <ul>
-                                        <li class="line-head-row">
-                                            <center>
-                                                <h3>Past Groups</h3>
-                                            </center>
-                                        </li>
-                                        <p align="center"><a href="http://hsdm.harvard.edu/rosen-laboratory">Rosen Lab</a> (2013)<br>Department of Developmental Biology<br>Harvard School of Dental Medicine</p>
-                                        <p align="center"><a href="http://www.bumc.bu.edu/medicine/dom-introduction/faculty/corkeylab/">Corkey's Lab</a> (2012)<br>Obesity Research Center<br>Boston University School of Medicine</p>
-                                    </ul>
-                                </div>
-                            </div>
-                            <br/><br/>
+                            <!-- row -->
                         </div>
-                        <div class="col-md-8">
-                        <div class="line-pricing-table wow rotateInUpRight" data-animation-delay="10s">
-                            <div class="pricing-table-wrap">
-                                <ul>
-                                <li class="line-head-row">
-                                </li>
-                                <center>
-                                    <h3>Recent Publications</h3>
-                                </center>
-                                <li class="line-btn-row">
-                                </li>
-                                <ol align="left">
-                                <li>N-linked glycosylation of the bone morphogenetic protein receptor type 2 (BMPR2) enhances ligand binding</strong>.
-                                    Jonathan W. Lowery, Jose M. Amich, Alex Andonian, Vicki Rosen. <a href="http://link.springer.com/journal/18">Cellular and Molecular Life Sciences</a>. 2013.
-                                    <a class="btn btn-primary btn-xs" href="http://link.springer.com/article/10.1007/s00018-013-1541-8" target="_blank"><i class="fa fa-file-text" title="PDF"></i> PDF</a>
-                                </li>
+                        <!-- about -->
+                    </div>
+                    <!-- container -->
+                </section>
+                <!-- about -->
+                <section class="section section-parallax-format" data-speed="5" data-type="background" id="parallax-graph">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="align-center">
+                                    <div class="testimonial pad-top40 pad-bot40 clearfix">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="outreach" class="section pad-bot5 bg-white appear clearfix">
+                    <div class="container">
+                       <div class="row mar-bot5">
+                          <div class="col-md-offset-3 col-md-6">
+                             <div class="section-header">
+                                <h2 class="section-heading animated">Community Outreach</h2>
+                                <p>Some of the organizations I have worked with in the past.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mar-bot-40">
+                       <div class="col-sm-4">
+                         <div class="align-center">
+                           <img src="./img/outreach/Lewiston_Public_Schools.png" width="100%">
+                       </div>
+                   </div>
+                   <div class="col-sm-4">
+                     <div class="align-center">
+                       <img src="./img/outreach/bbbs.jpg" width="100%">
+                   </div>
+               </div>
+               <div class="col-sm-4">
+                 <div class="align-center">
+                   <img src="./img/outreach/CodeOrg.png" width="100%">
+               </div>
+           </div>
+       </div>
+       <div class="row mar-bot-40">
+         <div class="col-sm-12 mar-bot-40"><br><br><br></div>
+     </div>
+ </div>
+</section>
+<section class="section section-parallax-format" id="parallax-bates-lightning" data-speed="3.5" data-type="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="align-center">
+                    <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="work" class="section pad-bot5 bg-white appear clearfix">
+    <div class="container">
+        <div class="row mar-bot5">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <h2 class="section-heading animated">Industry Experience</h2>
+                    <p>Places and teams I hope to work with in the future.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mar-bot-40">
+           <div class="col-sm-4">
+             <div class="align-center">
+               <img src="./img/company/google.png" width="100%">
+               Research Scientist, <b>Google Brain/DeepMind Team</b>
+           </div>
+       </div>
+       <div class="col-sm-4">
+         <div class="align-center">
+           <img src="./img/company/facebook.png" width="100%">
+           Research Engineer, <b>Facebook AI Research (FAIR)</b>
+       </div>
+   </div>
+   <div class="col-sm-4">
+     <div class="align-center">
+       <img src="./img/company/nvidia.png" width="100%">
+       Deep Learning Software Engineer
+   </div>
+</div>
+</div>
+<div class="row mar-bot-40">
+ <div class="col-sm-12 mar-bot-40"><br><br><br></div>
+</div>
+</div>
+</section>
+<section class="section section-parallax-format" id="parallax-company" data-speed="8" data-type="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="align-center">
+                    <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="education" class="section appear clearfix">
+    <div class="container">
+        <div class="row mar-bot10">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <h2 class="section-heading">Education</h2>
+                    <p>Subjects I've studied over the years.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-center mar-bot20">
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="profile-picture">
+                        <figure><img src="img/edu/pitt.jpg" alt=""></figure>
+                    </div>
+                    <div class="team-detail">
+                        <h2>Summer 2016</h2>
+                        <h4>University of Pittsburgh</h4>
+                    </div>
+                    <div class="team-bio">
+                        REU in Computational Biology<br>
+                        Advisor: <a href="https://www.csb.pitt.edu/faculty/chakra/" target="_blank">Chakra Chennubhotla</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="profile-picture">
+                        <figure><img src="img/edu/bates.jpg" alt="" height="100%"></figure>
+                    </div>
+                    <div class="team-detail">
+                        <h2>2013-2017</h2>
+                        <h4>Bates College</h4>
+                    </div>
+                    <div class="team-bio">
+                        BS, Neuroscience, Physics, Mathematics<br>
+                        Advisors: <a href="http://www.jcastrolab.com/" target="_blank">Jason Castro</a>,
+                        <a href="http://www.bates.edu/physics-astronomy/faculty-staff/travis-gould/" target="blank">Travis Gould </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <div class="profile-picture">
+                        <figure><img src="img/edu/rivers.jpg" alt=""></figure>
+                    </div>
+                    <div class="team-detail">
+                        <h2>2013</h2>
+                        <h4>Rivers High School</h4>
+                    </div>
+                    <div class="team-bio">
+                        Graduated with Distinction
+                        <br> Cum Laude Society <br>
+                        High Honors 2009 - 2012 <br>
+                        Scholar Athlete Awards 2009 - 2012 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section section-parallax-format" id="parallax-bates" data-speed="12" data-type="background">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="align-center">
+                    <div class="testimonial pad-top40 pad-bot40 clearfix"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="projects" class="section appear clearfix">
+    <div class="container">
+        <div class="row mar-bot40">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <h2 class="section-heading animated" data-animation="bounceInUp">Projects</h2>
+                    <p>A collection of side projects, research studies, and course assignments.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <nav id="filter" class="col-md-12 text-center">
+                <ul>
+                    <li><a href="#" class="current btn-theme btn-small" data-filter="*">All</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".neuro"><i class="fa fa-sort"></i> Neuroscience</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".physics"><i class="fa fa-sort"></i> Physics</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".math"><i class="fa fa-sort"></i>Mathematics</a></li>
+                    <li><a href="#" class="btn-theme btn-small" data-filter=".other"><i class="fa fa-sort"></i> Other</a></li>
+                </ul>
+            </nav>
+            <div class="col-md-12">
+                <div class="row">
+                    <div class="portfolio-items isotopeWrapper clearfix" id="3">
+                        <article class="col-md-4 isotopeItem neuro">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInUpLeft" data-animation-delay="4.8s">
+                                    <img src="img/projects/coexp_fig.png" alt="welcome" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a target="_blank">Coexpression profiles for addiction-related genes using monte-carlo simulations</a></h5>
+                                        <a target="_blank" class="fancybox" href="projects/Andonian_Moody_Grant.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem math">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInDownRight">
+                                    <img src="img/projects/violin.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a  target="_blank">Mathematical Modeling of Violin using Mathematica</a></h5>
+                                        <a  target="_blank" class="fancybox"
+                                        href="projects/Andonian_Violin.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem physics">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInUpLeft">
+                                    <img src="img/projects/double_pendulum.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="projects/Andonian_Double_Pendulum.pdf" target="_blank">Lagrangian dynamics of the double pendulum</a></h5>
+                                        <a target="_blank" class="fancybox" href="projects/Andonian_Double_Pendulum.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem math">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInDownRight">
+                                    <img src="img/projects/coding_theory.jpg" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a  target="_blank">Coding Theory: Coset Decoding</a></h5>
+                                        <a  target="_blank" class="fancybox"
+                                        href="projects/Andonian_Coding_Theory.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem neuro">
+                            <div class="portfolio-item">
+                                <div class="wow bounceIn">
+                                    <img src="img/projects/Metrics.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="_blank" class="fancybox">Characterization of dose-dependent 5-HT<sub>2C</sub> Receptor desensitization in <i> Xenopus Laevis</i> oocytes </a></h5>
+                                        <a  class="fancybox"
+                                        href="projects/Andonian_BINS308_5_HT2C_Receptor_Final_Lab_Report.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem other">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInDownRight">
+                                    <img src="img/projects/friedel_crafts.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="./img/projects/friedel_crafts.png" class="fancybox">Electronic Factors Affecting the Rate and Regioisomeric outcome of the Friedel-Crafts Acylation Reaction</a></h5>
+                                        <a class="fancybox" href="projects/Andonian_Friedel_Crafts_Acylation.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem math">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInUpLeft">
+                                    <img src="img/projects/caesar_code.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a  target="_blank">SECRET CODES WITH CAESAR CIPHERS - teaching middleschoolers to code</a></h5>
+                                        <a  target="_blank" class="fancybox"
+                                        href="projects/Andonian_cbock_MATH355A_CEL_Project.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem physics">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInDownRight">
+                                    <img src="img/projects/digital_therm.jpg" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a  target="_blank">Building a digital LED thermometer</a></h5>
+                                        <a target="_blank"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem other">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInUpLeft">
+                                    <img src="img/projects/TCA.jpg" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="./dl/omega_presentation.pdf" target="_blank">Cellular Metabolism: Investigating relationships between diet, exercise, stress and sleep.</a></h5>
+                                        <a target="_blank" class="fancybox"
+                                        href="projects/Andonian_Metabolism_Project.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem neuro">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInUpLeft">
+                                    <img src="img/projects/mam_bodies.png" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="./dl/omega_presentation.pdf" target="_blank">Mammillary Body atrophy associated with chronic alcoholism</a></h5>
+                                        <a target="_blank" class="fancybox"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem physics">
+                            <div class="portfolio-item">
+                                <div class="wow bounceIn">
+                                    <img src="img/projects/apparatus.PNG" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5>Experimental determination of the mass of the neutron</a></h5>
+                                        <a target="_blank" class="fancybox" href="projects/Andonian_HD_Lab_Report.pdf"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-4 isotopeItem other">
+                            <div class="portfolio-item">
+                                <div class="wow rotateInDownRight">
+                                    <img src="img/projects/bates_connect.jpg" alt="" />
+                                </div>
+                                <div class="portfolio-desc align-center">
+                                    <div class="folio-info">
+                                        <h5><a href="https://github.com/alexandonian/bates-connect" target="_blank">Bates Connect: an android app that fetches relevant info about the college and displays it in one convenient place</a></h5>
+                                        <a  target="_blank" class="fancybox" href="https://github.com/alexandonian/bates-connect"><i class="fa fa-external-link fa-2x"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section pad-top40 pad-bot40 mar-bot20 section-parallax-format" id="parallax-research" data-speed="15" data-type="background">
+    <div class="container ">
+        <div class="align-center pad-top40 pad-bot40">
+            <h4 class="color-white pad-top50"></h4>
+        </div>
+    </div>
+</section>
+<section id="research" class="section appear clearfix">
+    <div class="container pad-top10">
+        <div class="row mar-bot10 ">
+            <div class="col-md-offset-3 col-md-6">
+                <div class="section-header">
+                    <div class="wow bounceIn">
+                        <h2 class="section-heading animated" data-animation="bounceInUp">Research</h2>
+                        <p>An overview of my research interests, publications, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="line-pricing-table wow rotateInDownRight" data-animation-delay="10s">
+                <div class="pricing-table-wrap">
+                    <ul>
+                        <center>
+                            <h3>Interests</h3>
+                        </center>
+                        <p align="center">
+                            Bioimage informatics, image registration, computational anatomy
+                        </p>
+                        <br>
+                        <center>
+                            <h3>Application Areas</h3>
+                        </center>
+                        <p align="center">
+                            Medical diagnosis, study of disease processes
+                        </p>
+                    </ul>
+                </div>
+            </div>
+            <div class="line-pricing-table wow rotateInUpRight" data-animation-delay="10s">
+                <div class="pricing-table-wrap">
+                    <ul>
+                        <li class="line-head-row">
+                            <center>
+                                <h3>Past Groups</h3>
+                            </center>
+                        </li>
+                        <p align="center"><a href="http://hsdm.harvard.edu/rosen-laboratory">Rosen Lab</a> (2013)<br>Department of Developmental Biology<br>Harvard School of Dental Medicine</p>
+                        <p align="center"><a href="http://www.bumc.bu.edu/medicine/dom-introduction/faculty/corkeylab/">Corkey's Lab</a> (2012)<br>Obesity Research Center<br>Boston University School of Medicine</p>
+                    </ul>
+                </div>
+            </div>
+            <br/><br/>
+        </div>
+        <div class="col-md-8">
+            <div class="line-pricing-table wow rotateInUpRight" data-animation-delay="10s">
+                <div class="pricing-table-wrap">
+                    <ul>
+                        <li class="line-head-row">
+                        </li>
+                        <center>
+                            <h3>Recent Publications</h3>
+                        </center>
+                        <li class="line-btn-row">
+                        </li>
+                        <ol align="left">
+                            <li>N-linked glycosylation of the bone morphogenetic protein receptor type 2 (BMPR2) enhances ligand binding</strong>.
+                                Jonathan W. Lowery, Jose M. Amich, Alex Andonian, Vicki Rosen. <a href="http://link.springer.com/journal/18">Cellular and Molecular Life Sciences</a>. 2013.
+                                <a class="btn btn-primary btn-xs" href="http://link.springer.com/article/10.1007/s00018-013-1541-8" target="_blank"><i class="fa fa-file-text" title="PDF"></i> PDF</a>
+                            </li>
                                 <!-- <li>
                                     <strong>Title</strong>.
                                     Authors <a href="link">Journal Name</a>. Year.
@@ -592,81 +641,83 @@
                                     <a class="btn btn-primary btn-xs" href="link" target="_blank"><i class="fa fa-mouse-pointer"></i> Website</a>
                                     </li>
                                     <li> -->
-                                <div class="line-pricing-table wow rotateInUpLeft" data-animation-delay="10s">
-                                    <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.3s">
-                                        <ul align>
-                                            <li class="line-head-row">
-                                            </li>
-                                            <center>
-                                                <h3>Presentations and Other Papers</h3>
-                                            </center>
-                                            <li class="line-btn-row">
-                                            </li>
-                                            <ol id="ol-space" align="left">
-                                                <li>
-                                                    <strong>Scalable Informatics Tools for Investigating Intra-Tumor Heterogeneity in Breast Cancer.</strong> A.Andonian. Summer Undergraduate Research Symposium, University of Pittsburgh and Duquesne University. July 2016. 
-                                                    <a class="btn btn-primary btn-xs" href="projects/heterogeneity/Scalable%20Informatics%20Tools%20for%20Investigating%20Tumor%20Heterogeneity%20in%20Breast%20Cancer.pdf" target="_blank"><i class="fa fa-file-text" title="PDF"></i> PDF</a>
-                                                    <a class="btn btn-primary btn-xs" href="" target="_blank"><i class="fa fa-github fa-lg" title="Github"></i> Code</a>
-                                                    <a class="btn btn-primary btn-xs" href="projects/heterogeneity/Andonian_poster.pdf" target="_blank"><i class="fa fa-list-alt fa-lg" title="Poster"></i> Poster</a>
-                                                </li>
-                                                <li>
-                                                    <strong>Informatics Tools for Quantifying Intratumor Heterogeneity in Multiplexed Fluorescence Tissue Data
-                                                    </strong>
-                                                    A.Andonian. Council on Undergraduate Research's Research Experiences for Undergraduates Symposium. National Science Foundation's Atrium, Arlington Virginia. October 2016.
-                                                </li>
-                                            </ol>
-                                        </ul>
+                                        <div class="line-pricing-table wow rotateInUpLeft" data-animation-delay="10s">
+                                            <div class="pricing-table-wrap" data-scrollreveal="enter top over 0.5s after 0.3s">
+                                                <ul align>
+                                                    <li class="line-head-row">
+                                                    </li>
+                                                    <center>
+                                                        <h3>Presentations and Other Papers</h3>
+                                                    </center>
+                                                    <li class="line-btn-row">
+                                                    </li>
+                                                    <ol id="ol-space" align="left">
+                                                        <li>
+                                                            <strong>Scalable Informatics Tools for Investigating Intra-Tumor Heterogeneity in Breast Cancer.</strong> A. Andonian. Summer Undergraduate Research Symposium, University of Pittsburgh and Duquesne University. July 2016. 
+                                                            <a class="btn btn-primary btn-xs" href="projects/heterogeneity/Scalable%20Informatics%20Tools%20for%20Investigating%20Tumor%20Heterogeneity%20in%20Breast%20Cancer.pdf" target="_blank"><i class="fa fa-file-text" title="PDF"></i> PDF</a>
+                                                            <a class="btn btn-primary btn-xs" href="" target="_blank"><i class="fa fa-github fa-lg" title="Github"></i> Code</a>
+                                                            <a class="btn btn-primary btn-xs" href="projects/heterogeneity/Andonian_poster.pdf" target="_blank"><i class="fa fa-list-alt fa-lg" title="Poster"></i> Poster</a>
+                                                        </li>
+                                                        <li>
+                                                            <strong>Informatics Tools for Quantifying Intratumor Heterogeneity in Multiplexed Fluorescence Tissue Data.</strong>
+                                                            A. Andonian. Council on Undergraduate Research's Research Experiences for Undergraduates Symposium. National Science Foundation's Atrium, Arlington Virginia. October 2016.
+                                                        </li>
+                                                        <li>
+                                                            <strong>Data Driven Approaches for Investigating Molecular Heterogeneity of the Brain.</strong> A. Andonian. Mt. David Summit, Bates College, March 2017. 
+                                                        </li>
+                                                    </ol>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <br/><br/>
                                     </div>
                                 </div>
-                                <br/><br/>
+                            </section>
+                            <section id="section-map" class="clearfix">
+                            </section>
+                            <section id="footer" class="section footer appear clearfix">
+                                <div class="container">
+                                    <a name="contact" class="anchor"></a>
+                                    <center>
+                                        <p>
+                                            <h2>Contact</h2>
+                                            Ways to contact me and links to social media
+                                            
+                                        </p>
+                                    </center>
+<!-- 
+                                    <div id="recaptcha-protected" align="center">
+                                      <br>
+                                      <form method="post">
+                                          <div class="g-recaptcha" data-sitekey="6LduxRwTAAAAAJ4K1xk1B3svWbifdGiKfJBi1rsD" data-callback="onReturnCallback" data-theme="dark"></div>
+                                      </form>
+                                      Click the box to show contact information
+                                  </div> -->
+                                  <div class="row align-center">
+                                    <p align="center">Last Updated: Septermber 20, 2016<!-- <br>2016-06-19T21:27:27-07:00 --></p>
+                                </div>
                             </div>
-                        </div>
-                    </section>
-                    <section id="section-map" class="clearfix">
-                        <!--  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188823.73456676016!2d-71.19724192390404!3d42.313288251322966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e3652d0d3d311b%3A0x787cbf240162e8a0!2sBoston%2C+MA!5e0!3m2!1sen!2sus!4v1466376409103" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe> -->
-                        <div id="map"></div>
-                    </section>
-                    <section id="footer" class="section footer appear clearfix">
-                        <div class="container">
-                            <a name="contact" class="anchor"></a>
-                            <center>
-                                <p>
-                                <h2>Contact</h2>
-                                Ways to contact me and links to social media
-                                </p>
-                            </center>
-                            <!-- 
-                                <div id="recaptcha-protected" align="center">
-                                  <br>
-                                  <form method="post">
-                                      <div class="g-recaptcha" data-sitekey="6LduxRwTAAAAAJ4K1xk1B3svWbifdGiKfJBi1rsD" data-callback="onReturnCallback" data-theme="dark"></div>
-                                  </form>
-                                  Click the box to show contact information
-                                </div> -->
-                            <div class="row align-center">
-                                <p align="center">Last Updated: Septermber 20, 2016<!-- <br>2016-06-19T21:27:27-07:00 --></p>
-                            </div>
-                        </div>
-                    </section>
-                    <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
-                    <script src="./js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
-                    <script src="./js/jquery.js"></script>
-                    <script src="./js/jquery.easing.1.3.js"></script>
-                    <script src="./js/main.min.js"></script>
-                    <script src="./js/jquery.isotope.min.js"></script>
-                    <script src="./js/jquery.nicescroll.min.js"></script>
-                    <script src="./js/fancybox/jquery.fancybox.pack.js"></script>
-                    <script src="./js/skrollr.min.js"></script>
-                    <script src="./js/jquery.scrollTo-1.4.3.1-min.js"></script>
-                    <script src="./js/jquery.localscroll-1.2.7-min.js"></script>
-                    <script src="./js/responsive-slider.js"></script>
-                    <script src="./js/jquery.appear.js"></script>
-                    <script src="./js/validate.js"></script>
-                    <script src="./js/grid.js"></script>
-                    <script src="./js/parallax.js"></script>
-                    <script src="./js/main.js"></script>
-                    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?"></script>
-                    <script type="text/javascript">
+                        </section>
+                        <a href="#header" class="scrollup"><i class="fa fa-chevron-up"></i></a>
+                        <script src="./js/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+                        <script src="./js/jquery.js"></script>
+                        <script src="./js/jquery.easing.1.3.js"></script>
+                        <script src="./js/main.min.js"></script>
+                        <script src="./js/jquery.isotope.min.js"></script>
+                        <script src="./js/jquery.nicescroll.min.js"></script>
+                        <script src="./js/fancybox/jquery.fancybox.pack.js"></script>
+                        <script src="./js/skrollr.min.js"></script>
+                        <script src="./js/jquery.scrollTo-1.4.3.1-min.js"></script>
+                        <script src="./js/jquery.localscroll-1.2.7-min.js"></script>
+                        <script src="./js/responsive-slider.js"></script>
+                        <script src="./js/jquery.appear.js"></script>
+                        <script src="./js/validate.js"></script>
+                        <script src="./js/grid.js"></script>
+                        <script src="./js/parallax.js"></script>
+                        <!-- <script src="./js/bootstrap-magnify.js"></script> -->
+                        <script src="./js/main.js"></script>
+                        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?"></script>
+                        <script type="text/javascript">
                         // When the window has finished loading create our google map below
                         google.maps.event.addDomListener(window, 'load', init);
                         function init() {
@@ -687,8 +738,8 @@
                                 }]
                             };
                             var mapElement = document.getElementById('map');
-                        	var map = new google.maps.Map(mapElement, mapOptions);
-                          }
+                            var map = new google.maps.Map(mapElement, mapOptions);
+                        }
                     </script>
                     <script src="js/wow.min.js"></script>
                     <script>
@@ -696,13 +747,14 @@
                     </script>
                     <script src='https://www.google.com/recaptcha/api.js'></script>
                     <script>
-                        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-                        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-                        
-                        ga('create', 'UA-36983866-5', 'auto');
-                        ga('send', 'pageview');
-                    </script>
-                </body>
-            </html>
+                      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+                      ga('create', 'UA-98008272-1', 'auto');
+                      ga('send', 'pageview');
+
+                  </script>
+              </body>
+              </html>
