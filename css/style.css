@@ -1825,6 +1825,7 @@ a.socialIcon:hover,
   margin-top: 5px;
   margin-left: 5px;
   margin-bottom: 5px;
+  width: 100%;
 }
 
 .publication {
