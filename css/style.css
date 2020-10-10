@@ -1832,6 +1832,10 @@ a.socialIcon:hover,
   display: flex;
 }
 
+.new-media-body {
+  margin-top: 5px;
+}
+
 .media-body {
   margin-top: 5px;
   padding-left: 20px;
@@ -1843,6 +1847,9 @@ a.socialIcon:hover,
   margin-left: 10px;
 }
 
+.author-list {
+  font-size: 14px;
+}
 /* html { */
   /* scroll-behavior: smooth; */
 /* } */
